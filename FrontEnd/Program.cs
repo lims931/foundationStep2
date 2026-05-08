@@ -6,6 +6,14 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
 
+builder.Services.AddHttpClient("Backend", client =>
+{
+    var backendBaseUrl = builder.Configuration["Backend:BaseUrl"]
+        ?? throw new InvalidOperationException("Backend:BaseUrl is not configured.");
+
+    client.BaseAddress = new Uri(backendBaseUrl);
+});
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
