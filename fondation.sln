@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Backend", "Backend\Backend.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrontEnd", "FrontEnd\FrontEnd.csproj", "{5F911626-1656-49CF-9BE6-7FBC45EAB39C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "fondation.AppHost", "fondation.AppHost\fondation.AppHost.csproj", "{E3400FB2-52CF-4FFB-98A2-126198A0B032}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "fondation.ServiceDefaults", "fondation.ServiceDefaults\fondation.ServiceDefaults.csproj", "{BB469C81-864C-8576-79F4-3B856E80D38F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{5F911626-1656-49CF-9BE6-7FBC45EAB39C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5F911626-1656-49CF-9BE6-7FBC45EAB39C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5F911626-1656-49CF-9BE6-7FBC45EAB39C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3400FB2-52CF-4FFB-98A2-126198A0B032}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3400FB2-52CF-4FFB-98A2-126198A0B032}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3400FB2-52CF-4FFB-98A2-126198A0B032}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3400FB2-52CF-4FFB-98A2-126198A0B032}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB469C81-864C-8576-79F4-3B856E80D38F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB469C81-864C-8576-79F4-3B856E80D38F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB469C81-864C-8576-79F4-3B856E80D38F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB469C81-864C-8576-79F4-3B856E80D38F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
