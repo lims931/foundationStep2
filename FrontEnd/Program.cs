@@ -10,10 +10,8 @@ builder.Services.AddRazorComponents()
 
 builder.Services.AddHttpClient("Backend", client =>
 {
-    var backendBaseUrl = builder.Configuration["Backend:BaseUrl"]
-        ?? throw new InvalidOperationException("Backend:BaseUrl is not configured.");
-
-    client.BaseAddress = new Uri(backendBaseUrl);
+    // Aspire service discovery resolves "backend" to the URL exposed by the AppHost.
+    client.BaseAddress = new Uri("https+http://backend");
 });
 
 var app = builder.Build();
