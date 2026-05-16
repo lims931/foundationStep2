@@ -9,7 +9,7 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowFrontEnd", policy =>
     {
-        policy.WithOrigins("http://localhost:5154", "https://localhost:7067")
+        policy.WithOrigins("http://localhost:5154", "https://localhost:7067", "http://localhost:5080")
             .AllowAnyHeader()
             .AllowAnyMethod();
     });
@@ -20,7 +20,7 @@ var app = builder.Build();
 
 // Configure the HTTP request pipeline.
 
-app.UseHttpsRedirection();
+//app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
